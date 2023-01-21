@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 목차
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- [프로젝트 소개](#프로젝트-소개)
+- [사용된 기술 스택](#사용된-기술-스택)
+  - [Front-End](#front-end)
+  - [Back-End](#back-end)
+- [구현한 기능 목록](#구현한-기능-목록)
 
-## Available Scripts
+<br/>
 
-In the project directory, you can run:
+# 프로젝트 소개
 
-### `npm start`
+<div align="center">
+<p>
+  판매 과일의 코드번호, 상품명, 수량 등을 관리할 수 있는 일종의 관리자 페이지</p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# 사용된 기술 스택
 
-### `npm test`
+## Front-End
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](https://img.shields.io/badge/front_end-javascript-F7DF1E?style=for-the-badge&logo=javascript)
 
-### `npm run build`
+![](https://img.shields.io/badge/front_end-react-61DAFB?style=for-the-badge&logo=react)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](https://img.shields.io/badge/%20front_end-css3-1572B6?style=for-the-badge&logo=css3)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<br/>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Back-End
 
-### `npm run eject`
+![](https://img.shields.io/badge/%20back_end-firebase-ffca28?style=for-the-badge&logo=firebase)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br/>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 구현한 기능 목록
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Firebase의 Firestore Database로 CRUD 구현
+- 추가 페이지 : 새로운 과일 추가 기능
+- 리스트 페이지 : 기존의 과일 정보를 수정하거나 삭제하는 기능
+- React Router Dom으로 라우팅 구현
+- useNavigate를 통한 상품 코드별 상세 페이지 구현
+- React Hooks 사용 (useState, useContext, useCallback, useMemo)
