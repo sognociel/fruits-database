@@ -4,6 +4,8 @@ import { useNavigate } from "react-router-dom";
 import { FunctionContext } from "../App";
 
 const DetailInfo = () => {
+  // pathname이 아니라 맨 뒤의 상품 코드(파라미터)를 가져오기 위해 useParams 사용
+  // pathname은 useNavigation 사용
   const { productId } = useParams();
   const navigate = useNavigate();
   const { getOneFruits, updateFruit, deleteFruit } =
@@ -22,6 +24,7 @@ const DetailInfo = () => {
   return (
     <div className="DetailInfo">
       <h3>{oneData.name} 상품 상세 페이지</h3>
+      {/* navigate에 -1을 하면 이전 페이지로 가게 된다 */}
       <button className="before-btn" onClick={() => navigate(-1)}>
         이전페이지
       </button>

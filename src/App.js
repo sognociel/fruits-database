@@ -93,6 +93,7 @@ function App() {
     });
   }, []);
 
+  // useMemo를 함수들을 재생성되지 않게 만들어준다.
   const memoizedFunctions = useMemo(() => {
     return {
       getOneFruits,
@@ -103,10 +104,13 @@ function App() {
     };
   }, []);
 
+  // Provider도 일종의 Component이기 때문에 전달받는 value props가 바뀔 때마다 렌더링 된다.
+  // value에 데이터와 함께 함수를 보낸다면 데이터 state가 바뀔 때마다 리렌더링이 되어 함수에 적용해놓았던 최적화가 망가지며, 이를 방지하기 위해 Context 중첩 사용
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
+
         <DataContext.Provider value={data}>
           <FunctionContext.Provider value={memoizedFunctions}>
             <Routes>

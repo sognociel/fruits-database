@@ -25,7 +25,7 @@
 
 ![](https://img.shields.io/badge/front_end-react-61DAFB?style=for-the-badge&logo=react)
 
-![](https://img.shields.io/badge/%20front_end-css3-1572B6?style=for-the-badge&logo=css3)
+![](https://img.shields.io/badge/%20front_end-sass-CC6699?style=for-the-badge&logo=sass)
 
 <br/>
 
